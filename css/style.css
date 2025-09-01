@@ -166,15 +166,16 @@ body, html {
     gap: 2rem;
     justify-content: center;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 .figure-card {
     flex: 1 1 0;
-    min-width: 0;
+    min-width: 220px;
+    max-width: 300px;
     background: none;
     perspective: 1000px;
     cursor: pointer;
     height: 13rem;
-    max-width: 100%;
     margin: 0 auto;
 }
 .figure-card-inner {
@@ -214,6 +215,16 @@ body, html {
     }
     .figure-card {
         height: 15rem;
+    }
+}
+@media (max-width: 900px) {
+    .figures-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .figure-card {
+        height: auto;
+        min-height: 10rem;
     }
 }
 @media (max-width: 600px) {
