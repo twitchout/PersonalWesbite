@@ -1,5 +1,3 @@
-// Interactive Profile JavaScript
-
 document.addEventListener('DOMContentLoaded', () => {
     const navContainer = document.getElementById('nav-container');
     const contentContainer = document.getElementById('content-container');
