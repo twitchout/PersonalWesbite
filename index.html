@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Profile</title>
+    <link rel="icon" href="images/favicon.ico" type="images/cyberLogoBlack.ico">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+<body class="centered-bg">
+
+    <main class="main-container">
+        
+        <div class="card text-center">
+            <h1 class="gradient-text main-title">Welcome, Friend.</h1>
+            <p class="main-desc">
+                Greetings from the great beyond! You have stumbled upon my personal webpage, a realm where code, creativity, and the culture collide under the radiance of the cosmos. Feel free to explore and connect.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2 class="section-title">About Me</h2>
+            
+            <div id="nav-container" class="nav-container">
+                <button data-target="culture" class="nav-btn active">Culture</button>
+                <button data-target="meal" class="nav-btn">Meal</button>
+                <button data-target="figures" class="nav-btn">Figures</button>
+                <button data-target="creativity" class="nav-btn">Creativity</button>
+                <button data-target="work" class="nav-btn">Work</button>
+                <button data-target="school" class="nav-btn">School</button>
+            </div>
+
+            <div id="content-container" class="content-container">
+                <div id="culture" class="content-panel">
+                    <h3 class="panel-title gradient-text">Roman Culture</h3>
+                    <p class="panel-desc">
+                        I am fascinated by roman culture and history, specifically the Twelve Tables, as I believe it is the foundation of modern legal systems. The Twelve Tables represent a significant step in the development of law and governance, emphasizing the importance of written laws and the rights of citizens. For the first time, the common man had a written document to reference when defending their rights.
+                    </p>
+                    <table class="twelve-tables-table">
+                        <tbody>
+                            <tr><td>Table I</td><td>Procedure for courts and trials</td></tr>
+                            <tr><td>Table II</td><td>Further procedures for courts and trials</td></tr>
+                            <tr><td>Table III</td><td>Debt and property</td></tr>
+                            <tr><td>Table IV</td><td>Rights of fathers over the family</td></tr>
+                            <tr><td>Table V</td><td>Legal guardianship and inheritance laws</td></tr>
+                            <tr><td>Table VI</td><td>Acquisition and possession</td></tr>
+                            <tr><td>Table VII</td><td>Land rights</td></tr>
+                            <tr><td>Table VIII</td><td>Torts and delicts (laws of injury)</td></tr>
+                            <tr><td>Table IX</td><td>Public law</td></tr>
+                            <tr><td>Table X</td><td>Sacred law</td></tr>
+                            <tr><td>Table XI</td><td>Supplement I</td></tr>
+                            <tr><td>Table XII</td><td>Supplement II</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="meal" class="content-panel">
+                    <div class="meal-flex">
+                        <div class="meal-info">
+                            <h3 class="panel-title gradient-text">The Bento Box</h3>
+                            <p class="panel-desc">
+                                <span class="meal-text" data-bento="all">A meal that represents me would be a well-crafted bento box.</span>
+                                <span class="meal-text" data-bento="rice">Each item—from the precisely shaped rice to the varied proteins and vegetables—is distinct,</span>
+                                <span class="meal-text" data-bento="all"> yet all components are carefully arranged to form a coherent and balanced whole.</span>
+                                <span class="meal-text" data-bento="all"> It's an elegant representation of how I process and organize vast, disparate pieces of information into a single, cohesive response.</span>
+                            </p>
+                        </div>
+                        <div class="bento-grid card">
+                            <div id="rice" class="bento-part rice"></div>
+                            <div class="bento-part green"></div>
+                            <div class="bento-part red"></div>
+                            <div class="bento-part yellow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="figures" class="content-panel">
+                    <div class="figures-row">
+                        <div class="figure-card">
+                            <div class="figure-card-inner">
+                                <div class="figure-card-front">
+                                    <h3 class="panel-title gradient-text">Marcus Aurelius</h3>
+                                    <p>Roman senator and philosopher.<br>Known for his work "Meditations".</p>
+                                </div>
+                                <div class="figure-card-back">
+                                    <p>
+                                        <a href="https://en.wikipedia.org/wiki/Marcus_Aurelius" target="_blank" rel="noopener noreferrer">
+                                            Wikipedia: Marcus Aurelius
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="figure-card">
+                            <div class="figure-card-inner">
+                                <div class="figure-card-front">
+                                    <h3 class="panel-title gradient-text">Mark Twain</h3>
+                                    <p>American author and humorist.<br>Known for his novels "The Adventures of Tom Sawyer" and "Adventures of Huckleberry Finn".</p>
+                                </div>
+                                <div class="figure-card-back">
+                                    <p>
+                                        <a href="https://en.wikipedia.org/wiki/Mark_Twain" target="_blank" rel="noopener noreferrer">
+                                            Wikipedia: Mark Twain
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="creativity" class="content-panel">
+                    <h3 class="panel-title gradient-text">I feel most creative when...</h3>
+                    <p class="panel-desc">I feel most creative when I have the freedom to express ideas without judgement. 
+                        <br> I feel most creative when I can study and work from the confines of my home.
+                        <br> Creatives that inspired me include Vincent Van Gogh, Pablo Picasso, and Edgar Allan Poe.
+                        <br> Artists who weren't afraid to challenge the norm and express their true selves.</p>
+                </div>
+
+                <div id="work" class="content-panel">
+                    <h3 class="panel-title gradient-text">Work History</h3>
+                    <p class="panel-desc">Current Role: Transportation Supervisor, Qualified Presort Services, LLC, 
+                        <br> Time in Role: 3 years.
+                        <br> Key Responsibilities: Overseeing transportation operations, managing a team of drivers, ensuring compliance with safety regulations.
+                        <br> Special Responsibilities: Building security protocols and training programs for all new employees. As well as building maintenance, ensuring the building is secure and well-maintained.</p>
+                    <p class="panel-desc">Previous Role: Network Administrator/Production Supervisor, Qualified Presort Services, LLC,
+                        <br> Time in Role: 3 years.
+                        <br> Key Responsibilities: Managing production network infrastructure, ensuring system reliability, and supporting production operations.
+                        <br> Special Responsibilities: Machine maintenance and troubleshooting, ensuring minimal downtime and optimal performance for OCR machines. 
+                    </p>
+                </div>
+
+                <div id="school" class="content-panel">
+                    <h3 class="panel-title gradient-text">School</h3>
+                    <p class="panel-desc">
+                        Institution: Southeast Technical College
+                        <br> Degree Program: Associates of Science in Computer Programming
+                        <br> Expected Graduation: September 2026
+                        <br> Relevant Coursework: Data Structures and Algorithms, Software Development, Database Management, Network and Security Basics.
+                        <br> Skills Acquired: Proficiency in programming languages such as Python and Java, understanding of software development lifecycle, database design and management, foundational knowledge of networking and cybersecurity principles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navContainer = document.getElementById('nav-container');
+            const contentContainer = document.getElementById('content-container');
+            const navButtons = navContainer.querySelectorAll('.nav-btn');
+            const contentPanels = contentContainer.querySelectorAll('.content-panel');
+
+            function showPanel(targetId) {
+                navButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.target === targetId);
+                });
+                contentPanels.forEach(panel => {
+                    panel.style.display = (panel.id === targetId) ? 'block' : 'none';
+                });
+            }
+
+            navContainer.addEventListener('click', (e) => {
+                if (e.target.matches('.nav-btn')) {
+                    const targetId = e.target.dataset.target;
+                    showPanel(targetId);
+                }
+            });
+
+            showPanel('culture');
+        });
+    </script>
+</body>
+</html>
