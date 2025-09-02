@@ -313,3 +313,86 @@ body, html {
         min-height: 40px;
     }
 }
+
+/* Fantasy Teams Styles */
+.fantasy-teams-card {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.fantasy-teams-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.fantasy-team-card {
+    flex: 1 1 0;
+    min-width: 220px;
+    max-width: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    height: 13rem;
+    margin: 0 auto;
+}
+
+.fantasy-team-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 1rem;
+}
+
+.fantasy-team-card-front, .fantasy-team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: var(--card-background);
+    color: var(--text-color);
+    backface-visibility: hidden;
+}
+
+.fantasy-team-card-back {
+    transform: rotateY(180deg);
+}
+
+.fantasy-team-card:hover .fantasy-team-card-inner,
+.fantasy-team-card.flipped .fantasy-team-card-inner {
+    transform: rotateY(180deg);
+}
+
+.fantasy-team-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.fantasy-league-name {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #bbb;
+    font-style: italic;
+}
+
+@media (max-width: 700px) {
+    .fantasy-teams-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .fantasy-team-card {
+        height: auto;
+        min-height: 10rem;
+    }
+}
